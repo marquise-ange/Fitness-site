@@ -1,0 +1,405 @@
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+
+/* =========================
+   MAIN GRID
+========================= */
+
+.parent {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    grid-template-rows: repeat(5, 1fr);
+
+    gap: 8px;
+
+    height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.div1 {
+    grid-row: span 5 / span 5;
+
+    background-color: rgb(148, 183, 213);
+
+    color: white;
+
+    padding: 30px 20px;
+}
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.logo h2 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.logo p {
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+}
+
+.menu {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.menu li {
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu .active {
+    background-color: white;
+
+    color: rgb(49, 73, 93);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.div2 {
+    grid-column: span 4 / span 4;
+
+    background-color: rgb(49, 73, 93);
+
+    color: white;
+
+    padding: 20px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar-title h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.navbar-title p {
+    margin: 5px 0 0;
+
+    font-size: 13px;
+
+    opacity: 0.7;
+}
+
+.nav-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.notification {
+    font-size: 20px;
+}
+
+.profile-circle {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-color: rgb(148, 183, 213);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.div3 {
+    grid-column: span 3 / span 3;
+
+    grid-row: span 3 / span 3;
+
+    grid-column-start: 2;
+
+    grid-row-start: 2;
+
+    background-color: rgb(148, 183, 213);
+
+    color: white;
+
+    padding: 25px;
+}
+
+.div3 > h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+.welcome {
+    background-color: white;
+
+    color: rgb(49, 73, 93);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.welcome h3 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+}
+
+.welcome p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.stats {
+    display: flex;
+
+    gap: 15px;
+}
+
+.stat {
+    background-color: white;
+
+    color: rgb(49, 73, 93);
+
+    flex: 1;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.stat h3 {
+    margin: 0;
+
+    font-size: 28px;
+
+    color: rgb(49, 73, 93);
+}
+
+.stat p {
+    margin: 8px 0 0;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.div8 {
+    grid-row: span 3 / span 3;
+
+    grid-column-start: 5;
+
+    grid-row-start: 2;
+
+    background-color: rgb(23, 42, 57);
+
+    color: white;
+
+    padding: 25px;
+}
+
+.div8 h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+.history {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.history-item {
+    background-color: rgba(255, 255, 255, 0.08);
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+.history-item strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.history-item small {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   STUDY GROUP
+========================= */
+
+.div9 {
+    grid-column: span 2 / span 2;
+
+    grid-column-start: 2;
+
+    grid-row-start: 5;
+
+    background-color: antiquewhite;
+
+    color: rgb(19, 19, 19);
+
+    padding: 20px;
+}
+
+.div9 h3 {
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+.members {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member-photo {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: rgb(148, 183, 213);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    margin: auto;
+}
+
+.member p {
+    margin: 5px 0 0;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   USER INFORMATION
+========================= */
+
+.div10 {
+    grid-column: span 2 / span 2;
+
+    grid-column-start: 4;
+
+    grid-row-start: 5;
+
+    background-color: rgb(15, 35, 52);
+
+    color: white;
+
+    padding: 20px;
+}
+
+.div10 h3 {
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+.user-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+}
+
+.user-info span {
+    opacity: 0.6;
+}
