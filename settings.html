@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitLife - Settings</title>
+
+    <link rel="stylesheet" href="Css/index.css">
+
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <!-- =========================
+             SIDEBAR
+        ========================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <h2>FITLIFE</h2>
+
+                <p>Fitness Management</p>
+
+            </div>
+
+
+            <nav class="navigation">
+
+                <a href="home.html">Home</a>
+
+                <a href="login.html">Login</a>
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="members.html">Members</a>
+
+                <a href="workouts.html">Workouts</a>
+
+                <a href="trainers.html">Trainers</a>
+
+                <a href="schedule.html">Schedule</a>
+
+                <a href="payments.html">Payments</a>
+
+                <a href="settings.html" class="active">Settings</a>
+
+                <div class="navigation-divider"></div>
+
+                <a href="logout.html" class="logout-link">Logout</a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================= -->
+
+        <main class="main-content">
+
+            <!-- =========================
+                 HEADER
+            ========================= -->
+
+            <header class="page-header">
+
+                <div>
+
+                    <p class="page-label">SYSTEM MANAGEMENT</p>
+
+                    <h1>Settings</h1>
+
+                </div>
+
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        MA
+                    </div>
+
+                    <div>
+
+                        <strong>Marquise Ange</strong>
+
+                        <span>Administrator</span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 SETTINGS CONTENT
+            ========================= -->
+
+            <section class="settings-page">
+
+
+                <!-- =========================
+                     PROFILE SETTINGS
+                ========================= -->
+
+                <div class="settings-section">
+
+                    <div class="settings-section-header">
+
+                        <div>
+
+                            <h2>Profile Information</h2>
+
+                            <p>
+                                Manage your administrator account information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-form">
+
+                        <div class="form-group">
+
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                value="Marquise Ange"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                value="admin@fitlife.rw"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                value="078 123 4567"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="role">
+                                Account Role
+                            </label>
+
+                            <input
+                                type="text"
+                                id="role"
+                                value="Administrator"
+                                readonly
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-actions">
+
+                        <button type="button" class="button">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     FITNESS CENTER SETTINGS
+                ========================= -->
+
+                <div class="settings-section">
+
+                    <div class="settings-section-header">
+
+                        <div>
+
+                            <h2>Fitness Center</h2>
+
+                            <p>
+                                Manage your fitness center information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-form">
+
+                        <div class="form-group">
+
+                            <label for="center-name">
+                                Fitness Center Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="center-name"
+                                value="FitLife Rwanda"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                value="Kigali, Rwanda"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="center-phone">
+                                Contact Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="center-phone"
+                                value="078 000 0000"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="currency">
+                                Currency
+                            </label>
+
+                            <select id="currency">
+
+                                <option selected>
+                                    Rwandan Franc (RWF)
+                                </option>
+
+                                <option>
+                                    US Dollar (USD)
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-actions">
+
+                        <button type="button" class="button">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     NOTIFICATION SETTINGS
+                ========================= -->
+
+                <div class="settings-section">
+
+                    <div class="settings-section-header">
+
+                        <div>
+
+                            <h2>Notifications</h2>
+
+                            <p>
+                                Choose which notifications you want to receive.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification-list">
+
+
+                        <div class="notification-item">
+
+                            <div>
+
+                                <h3>Membership Reminders</h3>
+
+                                <p>
+                                    Receive reminders when memberships are
+                                    about to expire.
+                                </p>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <div class="notification-item">
+
+                            <div>
+
+                                <h3>Payment Notifications</h3>
+
+                                <p>
+                                    Receive notifications when payments
+                                    are recorded.
+                                </p>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <div class="notification-item">
+
+                            <div>
+
+                                <h3>Class Reminders</h3>
+
+                                <p>
+                                    Receive reminders about upcoming classes
+                                    and schedules.
+                                </p>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SECURITY SETTINGS
+                ========================= -->
+
+                <div class="settings-section">
+
+                    <div class="settings-section-header">
+
+                        <div>
+
+                            <h2>Security</h2>
+
+                            <p>
+                                Manage your account security settings.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="security-list">
+
+
+                        <div class="security-item">
+
+                            <div>
+
+                                <h3>Password</h3>
+
+                                <p>
+                                    Last changed 30 days ago.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="secondary-button"
+                            >
+                                Change Password
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="security-item">
+
+                            <div>
+
+                                <h3>Two-Factor Authentication</h3>
+
+                                <p>
+                                    Add an extra layer of security to your account.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="secondary-button"
+                            >
+                                Enable
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SYSTEM PREFERENCES
+                ========================= -->
+
+                <div class="settings-section">
+
+                    <div class="settings-section-header">
+
+                        <div>
+
+                            <h2>System Preferences</h2>
+
+                            <p>
+                                Customize how the system displays information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-form">
+
+                        <div class="form-group">
+
+                            <label for="language">
+                                Language
+                            </label>
+
+                            <select id="language">
+
+                                <option selected>
+                                    English
+                                </option>
+
+                                <option>
+                                    Kinyarwanda
+                                </option>
+
+                                <option>
+                                    French
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="date-format">
+                                Date Format
+                            </label>
+
+                            <select id="date-format">
+
+                                <option selected>
+                                    DD/MM/YYYY
+                                </option>
+
+                                <option>
+                                    MM/DD/YYYY
+                                </option>
+
+                                <option>
+                                    YYYY-MM-DD
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-actions">
+
+                        <button type="button" class="button">
+                            Save Preferences
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     RETURN HOME
+                ========================= -->
+
+                <div class="settings-footer-actions">
+
+                    <a
+                        href="home.html"
+                        class="secondary-button"
+                    >
+                        Return to Home
+                    </a>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                 FOOTER
+            ========================= -->
+
+            <footer class="footer">
+
+                <p>
+                    © 2026 FitLife Rwanda. All rights reserved.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
